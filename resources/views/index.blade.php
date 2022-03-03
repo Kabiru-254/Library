@@ -78,8 +78,8 @@
                    <br>
                 </div>
                 <div class="text">
-                    <h4>Browse Publications</h4>
-                    <p>Find all academic publications here!</p>
+                    <h4>Browse Journals</h4>
+                    <p>Find all academic Journals here!</p>
                 </div>
             </div>
             <div onclick="openPage3()" id="card"  class="kadi">
