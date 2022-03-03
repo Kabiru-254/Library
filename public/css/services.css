@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+}
+
+.top{
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+.account a{
+    margin-right: 10px;
+}
+
+
+.main{
+    padding: 20px;
+    
+}
+
+/* Remove default bullets */
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  /* Remove margins and padding from the parent ul */
+  #myUL {
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+   
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }
+  .container{
+      padding: 10px;
+      margin-top: 25px;
+      margin-bottom: 50px;
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+ 
+
+  .help{
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: whitesmoke;
+  }
+
+  .meet{
+    border-right: 1px solid blueviolet;
+    border-left: 1px solid blueviolet;
+    flex-basis: 25%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .meet button{
+    border: 1px solid #f9004d;
+    padding: 5px;
+    width: 50%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+  }
+  .meet button:hover{
+    background-color: transparent;
+    color: black;
+  }
+  .email{
+    border-left: 1px solid blueviolet;
+    border-right: 1px solid blueviolet;
+    flex-basis: 60%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .email form{
+    
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  form input{
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+  }
+  form input:focus{
+    background-color: white;
+    border: 1px solid #f9004d;
+}
+form button{
+    border: 1px solid #f9004d;
+    padding: 5px;
+    width: 50%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    margin: 5px;
+}
+form button:hover{
+    background-color: transparent;
+    color: black;  
+    
+}
+#question{
+    height: 100px;
+    text-align: start;
+    overflow-wrap: break-word;
+}

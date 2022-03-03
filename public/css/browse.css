@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px 0px rgb(119, 117, 117);
+    background-color: whitesmoke;
+    color: blueviolet;
+}
+.logo a{
+    text-transform: uppercase;
+    line-height: 35px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.logo a, .logo i{
+    color: blueviolet;
+}
+.logo a:hover, .logo i:hover {
+    color: purple;
+}
+
+.logo i{
+    margin-right: 10px;
+    font-size: large;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.search{
+    width: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(99, 97, 97);
+
+}
+.search input{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    font-size: large;
+
+}
+.search i{
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    font-weight: 600;
+    color: #4BB543 ;
+    height: 100%;
+    cursor: pointer;
+}
+.search i:hover{
+    color: #245720 ;
+}
+.account{
+    cursor: pointer;
+    opacity: .8;
+}
+.account:hover{
+    opacity: 1;
+}
+.account img{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid plum;
+}

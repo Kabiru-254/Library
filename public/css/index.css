@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ 
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+}
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: white;
+    
+}
+#menu-bar{
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    border:.1rem solid black;
+    padding: 10px 15px;
+    display: none;
+  }
+.logo{
+    text-transform: uppercase;
+    line-height: 35px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.logo:hover{
+    letter-spacing: 2px;
+}
+.logo i{
+    margin-right: 10px;
+    font-size: large;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+nav ul{
+    list-style: none;
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul li{
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+    border: 1px solid transparent;
+   
+}
+nav ul li:hover{
+    background-color: #ddd;
+    
+    
+}
+nav ul li a:hover{
+    color: black;
+}
+
+nav ul li i{
+    margin-right: 10px;
+    font-size: large;
+}
+
+.dropbtn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    border: none;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+    border: 1px solid transparent;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: #3e8e41;
+}
+
+.main{
+    height: 85vh;
+    background-color: white;
+    background-image: url("/images/lib2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.searchbox{
+    background-color: whitesmoke;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+.searchbox h3{
+    border-top: 1px solid plum;
+    margin-top: 10px;
+   
+}
+.card{
+    width: 100%;
+    padding: 10px;
+}
+.kadi .text{
+    padding: 10px;
+}
+.kadi .text h4{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.card input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid plum;
+    color: black;
+    
+    background-color: #ddd;
+}
+.card input:focus{
+    border: 1px solid #f9004d;
+    background-color: white;
+}
+.card a{
+    border: 1px solid plum;
+    padding: 10px;
+    width: 40%;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.card a:hover{
+    background-color: transparent;
+    color: black;
+}
+.card .btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 20px;
+}
+
+.browse{
+    height: 50vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.kadi{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid plum;
+    padding: 10px;
+    box-shadow: 20px 20px 10px plum;
+}
+.kadi:hover{
+    cursor: pointer;
+    transform: rotate(5deg);
+}
+
+.kadi .img{
+    border: 1px solid #f9004d;
+  
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: auto;
+    right: auto;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  .modal-header h2{
+      text-align: center;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-body form{
+      padding: 10px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: space-evenly;
+      background-color: whitesmoke;
+  }
+  .modal-body form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    
+    }
+    .modal-body form input:focus{
+        background-color: white;
+        border: 1px solid #f9004d;
+    }
+    .modal-body form button{
+        border: 1px solid plum;
+        padding: 10px;
+        width: 40%;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        letter-spacing: 1px;
+        background-color: blueviolet;
+        color: white;
+    }
+    .modal-body form button:hover{
+        background-color: white;
+        color: black;
+    }
+
+
+
+    /* The Modal (background) */
+.modalreg {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: auto;
+    right: auto;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  .modal-header-reg h2{
+      text-align: center;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-reg {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .exit {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .exit:hover,
+  .exit:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-body-reg form{
+      padding: 10px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: space-evenly;
+      background-color: whitesmoke;
+  }
+  .modal-body-reg form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    
+    }
+    .modal-body-reg form input:focus{
+        background-color: white;
+        border: 1px solid #f9004d;
+    }
+    .modal-body-reg form button{
+        border: 1px solid plum;
+        padding: 10px;
+        width: 40%;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        letter-spacing: 1px;
+        background-color: blueviolet;
+        color: white;
+    }
+    .modal-body-reg form button:hover{
+        background-color: white;
+        color: black;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width:768px){
+    header{
+        margin: 0;
+        height: fit-content;
+        position: fixed;
+        top:0; left: 0; right:0; bottom: 20%;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background:white;
+        
+    }
+    nav ul{
+        display: block;
+        display: none;
+    }
+    #menu-bar{
+        display: initial;
+    }
+   
+}

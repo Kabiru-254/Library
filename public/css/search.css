@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+}
+
+body{
+  
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ddd;
+}
+.main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    background-color: transparent;
+    height: fit-content;
+  
+    width: 100%;
+}
+.main form{
+    box-shadow: 10px 10px 5px plum;
+    padding: 10px;
+    border: 1px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px;
+}
+form button{
+    border: 1px solid plum;
+    padding: 10px;
+    width: 40%;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: blueviolet;
+    color: white;
+}
+form button:hover{
+    background-color: white;
+    color: black;
+}
+form h2{
+    padding: 5px;
+    text-align: center;
+}
+form input{
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: whitesmoke;
+    text-align: center;
+    
+}
+form input:focus{
+    background-color: white;
+    border: 1px solid #f9004d;
+}
+
+.results{
+    border: 1px solid #f9004d;
+    width: 100%;
+    margin-top: 50px;
+    background-color: plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px;
+}
+
+table{
+    border: 1px solid white;
+    padding: 10px;
+    width: 80%;
+}
+
+tr, td, th{
+    padding: 10px;
+    background-color: white;
+}
+
+td .bts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bts button{
+    border: 1px solid #f9004d;
+    padding: 5px;
+    width: 30%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+   
+    background-color: blueviolet;
+    color: white;
+}
+
+.bts button:hover{
+    background-color: transparent;
+    color: black;
+}
