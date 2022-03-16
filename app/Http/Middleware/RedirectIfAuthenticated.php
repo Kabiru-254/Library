@@ -23,7 +23,23 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                switch(Auth::user()->role_id){
+                    case '300':
+                    $this->redirectTo = 'admin';
+                    return redirect()->route('admin');
+                        break;
+                    case '200':
+                        $this->redirectTo = 'librarian';
+                         return redirect()->route('librarian');
+                        break;
+                    case '100':
+                        $this->redirectTo = 'student';
+                         return redirect()->route('student');
+                        break;
+                    default:
+                        $this->redirectTo = 'login';
+                        return redirect()->route('login');
+                }
             }
         }
 

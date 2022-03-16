@@ -25,6 +25,29 @@
 </div>
 
 
+    <br>
+    <br>
+
+    <table class="table table-hover m-5">
+        <thead>
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach ($articles as $articles)
+            <tr>
+                <td>{{$articles -> name}}</td>
+                <td>{{$articles -> type}}</td>
+                <td><button>Download</button></td>
+            </tr>
+
+        @endforeach
+        </tbody>
+    </table>
+
 
 
 

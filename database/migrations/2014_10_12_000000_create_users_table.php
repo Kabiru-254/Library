@@ -19,9 +19,35 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->unsignedBigInteger('role_id')->default(100);
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('role_id')->references('id')->on('roles')
+            ->onDelete('cascade');
         });
+
+        $password = Hash::make('Qwerty123');
+
+        DB::table('users')->insert([
+            'id' => 1,
+            'name' =>  'Admin',
+            'email' => 'admin@amreflibrary.com',
+            'email_verified_at' => now(),
+            'role_id' => '300',
+            'password' => $password,
+            'remember_token' => Str::random(10),
+        ]);
+
+        DB::table('users')->insert([
+            'id' => 2,
+            'name' =>  'Librarian',
+            'email' => 'librarian@amreflibrary.com',
+            'email_verified_at' => now(),
+            'role_id' => '200',
+            'password' => $password,
+            'remember_token' => Str::random(10),
+        ]);
     }
 
     /**

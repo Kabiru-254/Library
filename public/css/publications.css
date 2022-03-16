@@ -27,3 +27,21 @@
 .account a{
     margin-right: 10px;
 }
+
+button{
+    border: 1px solid #f9004d;
+    padding: 5px;
+    width: 30%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+   
+    background-color: blueviolet;
+    color: white;
+}
+
+button:hover{
+    background-color: transparent;
+    color: black;
+}

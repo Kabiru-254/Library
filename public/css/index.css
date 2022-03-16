@@ -9,16 +9,13 @@
     text-decoration: none;
     transition:all .2s linear;
 }
-body{
-    height: 100vh;
-    background-color: whitesmoke;
-}
+
 header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 10px 30px;
     background-color: white;
     
 }
@@ -35,6 +32,14 @@ header{
     line-height: 35px;
     font-size: 17px;
     font-weight: 500;
+   
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo a:hover{
+    color: gray;
 }
 .logo:hover{
     letter-spacing: 2px;
@@ -68,8 +73,12 @@ nav ul li:hover{
     
     
 }
-nav ul li a:hover{
+nav a{
+    text-decoration: none;
     color: black;
+}
+nav ul li a:hover{
+    color: gray;
 }
 
 nav ul li i{
@@ -139,7 +148,7 @@ nav ul li i{
     height: fit-content;
     width: fit-content;
 }
-.searchbox h3{
+.searchbox h4{
     border-top: 1px solid plum;
     margin-top: 10px;
    
@@ -233,175 +242,6 @@ nav ul li i{
   
 }
 
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: auto;
-    right: auto;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
-  }
-  .modal-header h2{
-      text-align: center;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-body form{
-      padding: 10px;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      justify-content: space-evenly;
-      background-color: whitesmoke;
-  }
-  .modal-body form input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: white;
-    text-align: center;
-    margin: 5px;
-    
-    }
-    .modal-body form input:focus{
-        background-color: white;
-        border: 1px solid #f9004d;
-    }
-    .modal-body form button{
-        border: 1px solid plum;
-        padding: 10px;
-        width: 40%;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: 500;
-        cursor: pointer;
-        letter-spacing: 1px;
-        background-color: blueviolet;
-        color: white;
-    }
-    .modal-body form button:hover{
-        background-color: white;
-        color: black;
-    }
-
-
-
-    /* The Modal (background) */
-.modalreg {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: auto;
-    right: auto;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
-  }
-  .modal-header-reg h2{
-      text-align: center;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content-reg {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .exit {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .exit:hover,
-  .exit:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-body-reg form{
-      padding: 10px;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      justify-content: space-evenly;
-      background-color: whitesmoke;
-  }
-  .modal-body-reg form input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: white;
-    text-align: center;
-    margin: 5px;
-    
-    }
-    .modal-body-reg form input:focus{
-        background-color: white;
-        border: 1px solid #f9004d;
-    }
-    .modal-body-reg form button{
-        border: 1px solid plum;
-        padding: 10px;
-        width: 40%;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: 500;
-        cursor: pointer;
-        letter-spacing: 1px;
-        background-color: blueviolet;
-        color: white;
-    }
-    .modal-body-reg form button:hover{
-        background-color: white;
-        color: black;
-    }
 
 
 

@@ -8,6 +8,10 @@
    
     <link href="{{asset('/css/browse.css') }}" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/fa0463f5e9.js" crossorigin="anonymous"></script>
+     <!-- Scripts -->
+     <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -26,5 +30,7 @@
     <div class="main">
      @yield('content')
     </div>
+
+
 </body>
 </html>
