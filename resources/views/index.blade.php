@@ -46,7 +46,7 @@
                 <input type="text" name="search" id="" placeholder="Search" required> <br>
                 <div class="btn">
                     
-                    <a href="{{route('search')}}">Search</a>
+                    <a href="{{route('Search')}}">Search</a>
                 </div>
                
             </div>

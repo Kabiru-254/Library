@@ -10,6 +10,7 @@ class LibrarianController extends Controller
 {
     public function index() {
         $publicationTypes = DB::table('publication_type')->get();
-        return view('librarianDashboard')->with('publicationTypes', $publicationTypes);
+        $files = DB::table('files')->get();
+        return view('librarianDashboard')->with('publicationTypes', $publicationTypes)->with('files', $files);
     }
 }

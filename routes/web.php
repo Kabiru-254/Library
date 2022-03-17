@@ -51,5 +51,6 @@ Route::get('/Browse Journals', [JournalController::class, 'index'])->name('journ
 Route::get('/upload-file', [FileUploadController::class, 'createForm']);
 Route::post('/upload-file', [FileUploadController::class, 'fileUpload'])->name('fileUpload');
 
-Route::get('/Search', [SearchController::class, 'index'])->name('search');
+Route::get('/Search', [SearchController::class, 'index'])->name('Search');
+Route::post('/Find', [SearchController::class, 'search'])->name('Find');
 

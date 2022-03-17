@@ -37,10 +37,11 @@
     <div class="main">
 
         <div class="searchbox">
-            
+
             <h4>Search for books, articles, Journals and more!</h4> <br> 
 
-            <form action="" method="get">
+            <form action="{{route('Find')}}" method="post">
+            @csrf
                 <input type="text" name="search" id="" placeholder="Search" required> <br>
                 <br>
                 <div class="text-center">
@@ -52,6 +53,9 @@
 
     </div>
 
+
+
+    @if($files->count() > 0)
     <div class="results">
 
         <table class="m-5">
@@ -60,8 +64,8 @@
             <th>Action</th> <br>
             @foreach ($files as $Files)
             <tr>
-                <td>{{$Files -> name}}</td>
-                <td>{{$Files -> type}}</td>
+                <td>{{$Files->name}}</td>
+                <td>{{$Files->type}}</td>
             
                     
                 <td><button>Download</button></td>  
@@ -74,6 +78,8 @@
         
     </div>
 
+
+    @endif
 </div>
 
 
