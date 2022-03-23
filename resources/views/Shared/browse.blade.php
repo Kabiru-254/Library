@@ -18,10 +18,7 @@
         <div class="logo">
                 <a href="#"><i class="fa-solid fa-book"></i>Amref Library</a>
         </div>
-        <div class="search">
-            <input type="text" name="search" id="search" placeholder="Search...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+       
         <div class="account">
             <img src="https://img.icons8.com/color/48/000000/avatar.png"/>
         </div>

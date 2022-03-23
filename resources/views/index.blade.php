@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/fa0463f5e9.js" crossorigin="anonymous"></script>
     <link href="{{asset('/css/index.css') }}" rel="stylesheet" type="text/css">
      <!-- Scripts -->
      <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fa0463f5e9.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
     <header>
@@ -22,10 +24,10 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="{{route('journals')}}"><i class="fa-solid fa-book-skull"></i>View All Publications</a></li>
-                <li><a href="{{route('services')}}"><i class="fa-solid fa-bell-concierge"></i>Services</a></li>
-                <li><a href="{{route('services')}}"><i class="fa-solid fa-circle-question"></i>Help</a></li>
-              <!--  <li><a href="{{route('test')}}"><i class="fa-solid fa-circle-question"></i>Database</a></li> -->
+                <li><a href="{{route('Search')}}"><i class="fa-solid fa-book-skull"></i>Search All Publications</a></li>
+                <li><a href="{{route('services')}}"><i class="fa-solid fa-bell-concierge"></i>Services & Help</a></li>
+                
+           
                 
                 <div class="dropdown">
                     <li class="dropbtn"><i class="fa-solid fa-user-check"></i>My Account</li>
@@ -39,32 +41,20 @@
     </header>
     
     <div class="main">
-        <div class="searchbox">
-            
-            <h4>Search for books, articles, Journals and more!</h4> <br> 
-            <div class="card">
-                <input type="text" name="search" id="" placeholder="Search" required> <br>
-                <div class="btn">
-                    
-                    <a href="{{route('Search')}}">Search</a>
-                </div>
-               
-            </div>
-            
-        </div>
+    
+    </div>
+
+    <div class="btnz col-md-12 text-center">
+        <a href="{{route('Search')}}" class="btn btn-primary">Search Publications</a>
     </div>
 
     <div class="browse">
         <div class="container">
             <div onclick="openPage1()" id="card" class="kadi">
                 <div class="img">
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
+        
+                   <i class="fa fa-book" aria-hidden="true"></i>
+                  
                 </div>
                 <div class="text">
                     <h4>Browse Books</h4>
@@ -74,13 +64,9 @@
             </div>
             <div onclick="openPage2()" id="card"  class="kadi">
                 <div class="img">
-                    <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
+                   
+                   <i class="fa fa-file-word-o" aria-hidden="true"></i>
+        
                 </div>
                 <div class="text">
                     <h4>Browse Journals</h4>
@@ -89,13 +75,10 @@
             </div>
             <div onclick="openPage3()" id="card"  class="kadi">
                 <div class="img">
-                <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
-                   <br>
+    
+
+                   <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                  
                 </div>
                 <div class="text">
                     <h4>Browse Articles</h4>
@@ -104,7 +87,9 @@
             </div>
         
         </div>
-    </div>
+    </div> 
+
+    
 
     <footer class="text-center text-white" style="background-color: gray;">
   <!-- Grid container -->
@@ -174,15 +159,20 @@
     <a class="text-light" href="#">Amref Library</a>
   </div>
   <!-- Copyright -->
+
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
-    
-    <script>
-         let menu = document.querySelector('#menu-bar');
-         let navbar = document.querySelector('.navbar');
-         let card = document.querySelector('.kadi');
 
-         menu.onclick = () =>{
+    <script type="text/javascript">
+
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+        let card = document.querySelector('.kadi');
+
+        menu.onclick = () =>{
             menu.classList.toggle('fa-times');
             navbar.classList.toggle('active');
             }
@@ -197,9 +187,9 @@
         function openPage3() {
             window.open(" {{route('articles')}}" , "_self");
         }
-        
-
     </script>
+    
+
 </body>
 
 </html>

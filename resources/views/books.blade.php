@@ -10,6 +10,18 @@
     <link href="{{asset('/css/publications.css') }}" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/fa0463f5e9.js" crossorigin="anonymous"></script>
 </head>
+<br>
+    <div class="search">
+            <div class="with">
+                <form action="{{route('SearchBooks')}}" method="post">
+                    @csrf
+                    <input type="text" name="search" id="search" placeholder="Search... (You can type the part you remember)" required>
+                    <button type="submit" class="btn">Search for Book</button>
+                </form>
+            
+            </div>
+            
+    </div>
 
 
     <div class="text-center mt-5">
@@ -18,7 +30,7 @@
    
 
 
-    <br>
+
     <br>
 
     <table class="table table-hover m-5">

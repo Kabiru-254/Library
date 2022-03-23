@@ -11,4 +11,14 @@ class JournalController extends Controller
         $journals = DB::table('files')->where('type', 'Journal')->get();
         return view('journals')->with('journals', $journals);
     }
+
+    public function find(Request $request){
+        $search = $request->search;
+  
+        $data = DB::table('files')->where('type', 'Journal')->where('name', 'LIKE' , '%'.$search.'%')->get();
+  
+        return view('journals')
+        ->with('journals', $data);
+  
+     }
 }

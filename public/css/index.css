@@ -87,7 +87,7 @@ nav ul li i{
 }
 
 .dropbtn{
-    background-color: #04AA6D;
+    background-color: #f9004d;
     color: white;
     padding: 10px;
     font-size: large;
@@ -126,33 +126,26 @@ nav ul li i{
     display: block;
 }
 .dropdown:hover .dropbtn{
-    background-color: #3e8e41;
+    background-color: transparent;
+    color: black;
 }
 
 .main{
     height: 85vh;
-    background-color: white;
-    background-image: url("/images/lib2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: whitesmoke;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-image: url(../images/lib2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
     
 }
 
-.searchbox{
-    background-color: whitesmoke;
-    padding: 10px;
-    height: fit-content;
-    width: fit-content;
-}
-.searchbox h4{
-    border-top: 1px solid plum;
-    margin-top: 10px;
-   
-}
+
 .card{
     width: 100%;
     padding: 10px;
@@ -164,6 +157,10 @@ nav ul li i{
     text-align: center;
     margin: 5px;
     padding: 5px;
+}
+.kadi img i{
+    color: black;
+    font-size: larger;
 }
 .card input{
     width: 100%;
@@ -205,12 +202,19 @@ nav ul li i{
 }
 
 .browse{
-    height: 50vh;
-    padding: 10px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
     
 }
 
@@ -228,9 +232,12 @@ nav ul li i{
 .kadi{
     margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid plum;
+    border: 1px solid #f9004d;
+    background-color: whitesmoke;
+    color: black;
     padding: 10px;
-    box-shadow: 20px 20px 10px plum;
+    height: 250px;
+    
 }
 .kadi:hover{
     cursor: pointer;
@@ -239,7 +246,22 @@ nav ul li i{
 
 .kadi .img{
     border: 1px solid #f9004d;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   
+}
+.kadi .img i{
+    font-size: 40px;
+}
+
+.btnz{
+    position: absolute;
+    top: 30%;
+   
+    z-index: 2;
 }
 
 

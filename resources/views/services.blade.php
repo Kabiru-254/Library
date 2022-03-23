@@ -14,10 +14,7 @@
             <h3><i class="fas fa-question-circle"></i> Services & Help</h3>
         </div>
         
-        <div class="account">
-            <a href=""><i class="fa-solid fa-user"></i> My Profile</a> <br>
-            <a href=""><i class="fa-solid fa-bookmark"></i> Library</a>
-        </div>
+        
     </div>
     
 

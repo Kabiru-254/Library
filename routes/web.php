@@ -44,8 +44,13 @@ Route::get('/librarian', [LibrarianController::class, 'index'])->name('librarian
 
 
 Route::get('/Browse Books', [BooksController::class, 'index'])->name('books');
+Route::post('/SearchBooks', [BooksController::class, 'find'])->name('SearchBooks');
+
 Route::get('/Browse Articles', [ArticlesController::class, 'index'])->name('articles');
+Route::post('/SearchArticles', [ArticlesController::class, 'find'])->name('SearchArticles');
+
 Route::get('/Browse Journals', [JournalController::class, 'index'])->name('journals');
+Route::post('/SearchJournal', [JournalController::class, 'find'])->name('SearchJournal');
 
 
 Route::get('/upload-file', [FileUploadController::class, 'createForm']);

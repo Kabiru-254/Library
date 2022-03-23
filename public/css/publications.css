@@ -45,3 +45,34 @@ button:hover{
     background-color: transparent;
     color: black;
 }
+
+.search{
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    width: 95%;
+    
+}
+.search .with{
+    width: 70%;
+    border: 1px solid black;
+}
+.with form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.with form button{
+    border: 1px solid black;
+    height: 100%;
+}
+.with form button:hover{
+    background-color: rgb(71, 65, 65);
+    color: white;
+}
