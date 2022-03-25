@@ -14,7 +14,7 @@ class FileUploadController extends Controller
     public function fileUpload(Request $req){
 
         $req->validate([
-            'file' => 'required|mimes:csv,txt,xlx,xls,pdf'
+            'file' => 'required|mimes:csv,txt,xlx,xls,pdf,docx,doc,ppt,dot,docm'
         ]);
 
         
