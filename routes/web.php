@@ -39,6 +39,7 @@ Auth::routes();
 
 Route::get('/student',[StudentController::class, 'index'])->name('student')->middleware('student');
 Route::get('/download{name}',[StudentController::class, 'download'])->name('download');
+Route::get('/fetch{name}',[SearchController::class, 'download'])->name('fetch')->middleware('auth');
 Route::get('/preview{id}',[StudentController::class, 'preview'])->name('preview');
 
 Route::get('delete{id}', [LibrarianController::class, 'destroy'])->name('delete');

@@ -68,7 +68,7 @@
                 <td>{{$Files->type}}</td>
             
                     
-                <td><button>Download</button></td>  
+                <td><a href="{{route('fetch', $Files->name)}}" class="btn btn-success">Download</a></td>  
             
             </tr>
             @endforeach

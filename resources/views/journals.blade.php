@@ -45,7 +45,7 @@
             <tr>
                 <td>{{$Journal -> name}}</td>
                 <td>{{$Journal -> type}}</td>
-                <td><button>Download</button></td>
+                <td><a href="{{route('fetch', $Journal->name)}}" class="btn btn-success">Download</a></td>
             </tr>
 
         @endforeach

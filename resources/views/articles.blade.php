@@ -46,7 +46,7 @@
             <tr>
                 <td>{{$articles -> name}}</td>
                 <td>{{$articles -> type}}</td>
-                <td><button>Download</button></td>
+                <td><a href="{{route('fetch', $articles->name)}}" class="btn btn-success">Download</a></td> 
             </tr>
 
         @endforeach
