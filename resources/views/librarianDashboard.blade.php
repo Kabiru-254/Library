@@ -39,10 +39,11 @@
                         <br>
                         <label for="publicationType" class="label mr-15">Type of Publication</label>
                         <select id="publication" name="publication" class="input">
+                            
                             @foreach ($publicationTypes as $publicationType)
                             <option value="{{ $publicationType->type }}" >{{$publicationType->type}}</option>
                             @endforeach
-
+                            endif
                         </select>
                     </div>
                     
@@ -56,7 +57,6 @@
         </div>
   </div>
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-  
 
 
     <table class="table table-hover m-5">
@@ -72,7 +72,7 @@
             <tr>
                 <td>{{$Files -> name}}</td>
                 <td>{{$Files -> type}}</td>
-                <td><button>Delete Publication</button></td>
+                <td><a href="{{route('delete', $Files->id)}}" class="btn btn-danger">Delete Publication</a></td>
                 
             
             </tr>

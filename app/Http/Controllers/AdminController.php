@@ -12,4 +12,10 @@ class AdminController extends Controller
         $users = DB::table('users')->get();
         return view('adminDashboard')->with('users', $users);
     }
+
+    public function delete($id){
+        $users = DB::table('users')->get();
+        DB::delete('DELETE FROM users WHERE id = ?', [$id]);
+        return \App::make('redirect')->back()->with('users', $users);
+    }
 }

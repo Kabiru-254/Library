@@ -38,6 +38,22 @@ Auth::routes();
 
 
 Route::get('/student',[StudentController::class, 'index'])->name('student')->middleware('student');
+Route::get('/download{name}',[StudentController::class, 'download'])->name('download');
+Route::get('/preview{id}',[StudentController::class, 'preview'])->name('preview');
+
+Route::get('delete{id}', [LibrarianController::class, 'destroy'])->name('delete');
+Route::get('destroy{id}', [AdminController::class, 'delete'])->name('destroy');
+
+Route::get('public/uploads/{name}', function ($name) {
+    $path = storage_path('app\\public\\uploads'.'\\'.$name);
+
+    return response()->file($path, [
+        
+        'Content-Disposition' => 'inline; filename="'.$name.'"'
+   ]);
+});
+
+
 Route::get('/admin', [AdminController::class, 'index'])->name('admin')->middleware('admin');
 Route::get('/librarian', [LibrarianController::class, 'index'])->name('librarian')->middleware('librarian');
 

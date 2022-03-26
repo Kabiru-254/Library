@@ -2,27 +2,6 @@
 
 @section('content')
 
-<style>
-
-button{
-    border: 1px solid #f9004d;
-    padding: 5px;
-    width: 30%;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 500;
-    cursor: pointer;
-   
-    background-color: blueviolet;
-    color: white;
-}
-
-button:hover{
-    background-color: transparent;
-    color: black;
-}
-
-</style>
 
 <div class="container">
     <div class="row justify-content-center">
@@ -61,7 +40,14 @@ button:hover{
             <tr>
                 <td>{{$Files -> name}}</td>
                 <td>{{$Files -> type}}</td>
-                <td><button>Download</button></td>
+                <td>
+                    <div class="btns">
+                    <a class="btn btn-success" href="{{route('preview', $Files->id)}}">Preview</a>
+                    <a class="btn btn-primary" href="{{route('download', $Files->name)}}">Download</a>
+                    </div>
+                    
+                </td>
+                
             </tr>
 
         @endforeach
@@ -70,4 +56,10 @@ button:hover{
 </div>
 
 
+
+
+
+
 @endsection
+
+   

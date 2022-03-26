@@ -60,7 +60,7 @@ table tr td button:hover{
             <tr>
                 <td>{{$Users -> name}}</td>
                 <td>{{$Users -> email}}</td>
-                <td><button>Delete User</button></td>
+                <td><a class="btn btn-danger"href="{{route('destroy', $Users->id)}}">Delete User</a></td>
             </tr>
 
         @endforeach

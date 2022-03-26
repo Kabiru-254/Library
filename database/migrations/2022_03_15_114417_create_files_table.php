@@ -19,9 +19,8 @@ return new class extends Migration
             $table->string('file_path')->nullable();
             $table->string('type')->nullable();
             $table->timestamps();
-
             $table->foreign('type')->references('type')->on('publication_type')
-        ->onDelete('cascade');
+            ->onDelete('cascade');
         });
 
         
